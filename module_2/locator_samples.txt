@@ -1,0 +1,5 @@
+input#name
+//input[@id="lastname"]
+input.first-class
+//input[@data-attr="custom_phone"]
+//input[@class="form-control second"]   or   //input[contains(@class, "second")]
