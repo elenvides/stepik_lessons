@@ -1,13 +1,3 @@
-from selenium import webdriver
-
-main_page_link = "http://selenium1py.pythonanywhere.com/ru/"
-
-catalogue_all_products_locator = 'a[href="/ru/catalogue/"]'
-catalog_product_card_locator = 'article.product_pod'
-catalog_product_title_locator = 'h3 a'
-product_page_title_locator = 'h1'
-
-
 """
 Тестовый сценарий 2.2.1 Переход в карточку товара по названию
 Предусловия:
@@ -19,6 +9,15 @@ product_page_title_locator = 'h1'
 -- Переадрессация в карточку товара
 -- Название товара совпадает с названием из каталога
 """
+
+from selenium import webdriver
+
+main_page_link = "http://selenium1py.pythonanywhere.com/ru/"
+
+catalogue_all_products_locator = 'a[href="/ru/catalogue/"]'
+catalog_product_card_locator = 'article.product_pod'
+catalog_product_title_locator = 'h3 a'
+product_page_title_locator = 'h1'
 
 
 def test_open_product_by_title():
